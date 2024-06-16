@@ -1,0 +1,17 @@
+{% extends "AppFormulario/mascara.html" %}
+{% load static %}
+
+{% block contenidoVariable %}
+
+<h1>Editar Usuario Intermedio </h1>
+
+<form action="" method=POST>{% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value= "Editar">
+
+</form>
+
+
+
+
+{% endblock  %}

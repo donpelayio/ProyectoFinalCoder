@@ -1,0 +1,19 @@
+{% extends "AppFormulario/mascara.html" %}
+{% load static %}
+
+{% block contenidoVariable %}
+
+<h1>Detalle Intermedio </h1>
+
+<p>Nombre del Usuario nivel Intermedio: <i>{{intermedio.nombre}}</i></p>
+<p>Apellido: <i>{{intermedio.apellido}}</i></p>
+<p>Email: <i>{{intermedio.email}}</i></p>
+<p>Peso: <i>{{intermedio.peso}}</i></p>
+<p>
+    <a href="{% url 'ListaIntermedio' %}">Regresar</a>
+</p>
+
+
+
+
+{% endblock  %}

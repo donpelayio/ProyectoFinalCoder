@@ -1,0 +1,24 @@
+{% extends "AppFormulario/mascara.html" %}
+{% load static %}
+
+{% block contenidoVariable %}
+
+<h1>Estudiantes Principiantes</h1>
+
+{% for principiante in principiantes  %}
+
+    <li>{{principiante}}</li>
+    <button>
+    <a href="{% url 'eliminarPrincipiante' principiante.nombre %}">Eliminar</a>
+    <a href="{% url 'editarPrincipiante' principiante.nombre %}">Editar</a>
+    </button>
+    
+{% endfor %}
+
+
+<a href="{%url 'principiante'%}""> Agregar Principiante </a>
+
+
+{% endblock  %}
+
+
