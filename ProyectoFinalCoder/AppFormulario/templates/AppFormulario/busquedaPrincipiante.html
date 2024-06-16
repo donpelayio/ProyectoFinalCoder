@@ -1,0 +1,15 @@
+{% extends 'mascara.html' %}
+
+
+{% block contenidoVariable %}
+
+<form action="{% url 'buscarPrincipiante' %}" method="get">
+
+<p> Email Principiante: <input type="text" name="email"></p>
+
+<button type="submit"> Buscar </button>
+
+</form>
+
+{% endblock contenidoVariable %}
+    

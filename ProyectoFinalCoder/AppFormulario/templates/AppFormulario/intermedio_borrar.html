@@ -1,0 +1,17 @@
+{% extends "AppFormulario/mascara.html" %}
+{% load static %}
+
+{% block contenidoVariable %}
+
+<h1>Borrar Intermedio </h1>
+
+<form action="" method=POST>{% csrf_token %}
+    Estas seguro que deseas borrar el usuario intermedio {{intermedio.nombre}} {{intermedio.apellido}} ??
+    <input type="submit" value= "Eliminar">
+
+</form>
+
+
+
+
+{% endblock  %}

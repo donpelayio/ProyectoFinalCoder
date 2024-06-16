@@ -1,0 +1,10 @@
+{% extends 'mascara.html' %}
+
+
+{% block contenidoVariable %}
+
+<p>Buscamos los Principiantes con el email: {{email}} </p>
+
+<p>{{principiante.nombre}} {{principiante.apellido}} - {{principiante.email}}</p>
+
+{% endblock contenidoVariable %}
