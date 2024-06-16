@@ -1,0 +1,34 @@
+
+{% extends 'AppFormulario/mascara.html' %}
+
+{% load static %}
+
+
+{% block contenidoVariable %}
+
+    {% if miFormulario.erros %}
+
+    <p style="color: red;"> Estan mal los datos, revisar</p>
+    
+    {% endif %}
+    
+    <form action="" method="POST">{% csrf_token %}
+
+        <h1>Ingresa tus datos - Intermedios</h1>
+
+        <table>
+
+            {{ miFormulario.as_table }}
+
+
+        </table>
+
+
+        <input type="submit" value="Enviar">
+
+
+
+    </form>
+
+    {% endblock contenidoVariable %}
+    
